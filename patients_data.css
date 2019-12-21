@@ -1,0 +1,21 @@
+
+#Patients {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr{
+	width: 100%;
+}
+ #Patients th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: darkcyan;
+  background-color: #f1f1f1;
+
+}
+#Patients td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}

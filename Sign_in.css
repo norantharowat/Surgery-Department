@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+	body {
+		  background-image: url('background_image.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+      background-size: 100% 100%;
+      height: 100%;
+      width: 98%;
+      margin-right: 0px;
+	
+  }
+
+
+
+h1{
+  text-align: center;
+  color: darkcyan;
+  font-size:80px;
+   margin: 20px;
+   margin-right: 0px;
+  
+  
+}
+
+ .A{
+   text-align: center;
+   font-size:40px;
+   margin: 20px;
+   color: darkcyan;
+   margin-right: 0px;
+  
+}
+.B{
+ 
+  
+ 
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 0px;
+  
+}
+.C{
+	text-align: center;
+   font-size:40px;
+   margin: 20px;
+   margin-right: 0px;
+  
+    color: darkcyan;
+}
+.D{
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 0px;
+  
+}
+
+.E{
+ 
+  position: absolute;
+  left: 600px;
+  padding: 10px;
+  background-color: darkcyan;
+  border: none;
+  color:lightsteelblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 15px;
+  
+  
+
+}
+.E:hover {
+  background-color:black;
+  color:darkcyan;
+}
+
+
