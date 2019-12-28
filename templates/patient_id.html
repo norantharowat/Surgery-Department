@@ -3,25 +3,25 @@
 
 	<head>
   		 <title>search for a patient </title>
-  		 <link rel="stylesheet" type="text/css" href="/static/patient_id.css">
-  		 <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   		 <link rel="stylesheet" href="{{url_for('static', filename='css/patient_id.css')}}">   
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	</head>
     <body>
+       <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
 
     	<h1> Search for patient Information </h1>
-	    <a href ="doctors.html"><button class="E"  type="button"  >Back </button> </a>
+	    <a href ="{{url_for('doctor')}}"><button class="E"  type="button"  >Back </button> </a>
   
-      <form action="/action_page.php">
+      <form action="{{url_for('patientinfo')}}" method="POST">
         <div class="A">
-        Patient ID: <input  class="B" type="ID" name="ID" >
+        Doctor ID: <input  class="B" type="number" name="d_id" >
         </div>
-	      <a href="patients_data.html"> <button  type="button"  > Search </button> </a>
-        
+	      <input class="Z" type="submit" value="Submit">
         
       </form>
- 
-      
+
+
   	</body>
 </html>

@@ -1,7 +1,7 @@
 
-* {
+/** {
     box-sizing: border-box;
-  }
+  }*/
 body {
 		  background-image: url('D.jpg');
 		  background-repeat: no-repeat;
@@ -10,7 +10,9 @@ body {
       
       
 	}
-
+form{
+  margin-left: 500px; 
+}
 
 h1 {
 
@@ -22,7 +24,7 @@ h1 {
 }
 
 .A{
-   transform: translate(30%, 200%);
+   transform: translate(20%, 200%);
    font-size:40px;
    margin: 20px;
    color: darkcyan;
@@ -31,7 +33,20 @@ h1 {
 
 .B{
  
- 
+  transform: translate(20%, 10%);
+  background-color:lightsteelblue;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.C{
   background-color:lightsteelblue;
   border: none;
   color: white;
@@ -79,4 +94,36 @@ button:hover {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 15px;
+}
+.Z{
+
+  transform: translate(300%, 250%);
+  
+  background-color:darkcyan;
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.b5{
+position: absolute;
+left:500px;
+bottom: 695px;
+background-color:darkcyan;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+width: 145px;
 }

@@ -15,13 +15,49 @@ h1 {
   transform: translate(80%, 10%);
    
 }
+.b5{
+position: absolute;
+left:1200px;
+bottom: 500px;
+background-color:darkcyan;
+border: none;
+color: white;
+padding: 15px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+width: 145px;
+}
+button:hover {
+background-color:black;
+color:darkcyan;
+}
 
 .A{
   width: 100px;
   height: 100px;
   background: url(img_navsprites.gif) 0 0;
   float: right;
- transform: translate(765%, 10%);
+ transform: translate(745%, 10%);
+}
+.B{
+  width: 100px;
+  height: 100px;
+  background: url(img_navsprites.gif) 0 0;
+  float: right;
+margin: 50px;
+transform: translate(1095%, 160%);
+}
+.C{
+  width: 100px;
+  height: 100px;
+  background: url(img_navsprites.gif) 0 0;
+  float: right;
+margin: 50px;
+transform: translate(895%, 60%);
 }
 .overlay {
   position: absolute; 
@@ -44,54 +80,29 @@ h1 {
 
 }
 
-.B{
-  width: 100px;
-  height: 100px;
-  background: url(img_navsprites.gif) 0 0;
-  float: right;
-margin: 50px;
-transform: translate(915%, 60%);
-
-}
-.contain2:hover .overlay{
-	opacity: 1;
-
-}
 
 
-
-
-
-.C{
-  width: 100px;
-  height: 100px;
-  background: url(img_navsprites.gif) 0 0;
-  float: right;
-margin: 50px;
-transform: translate(1115%, 160%);
-}
 .contain3:hover .overlay{
 	opacity: 1;
 
 }
 
-.E{
- 
-  transform: translate(1263%, 208%);
+.Z{
+  transform: translate(1030%, 250%);
   
-  background-color: white;
-  color:darkcyan;
+  background-color: darkcyan;
   border: none;
-  padding: 15px 30px;
+  color:lightsteelblue;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
-  
-}
+  border-radius: 15px;
 
+}
 
 
 

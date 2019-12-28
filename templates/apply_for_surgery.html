@@ -2,46 +2,40 @@
 <html>
 <head>
 	<title>sign in</title>
-	<link rel="stylesheet" type="text/css" href="/static/apply.css">
+ 	<link rel="stylesheet" href="{{url_for('static', filename='css/apply.css')}}">  
 </head>
  
-<body>
+<body>S
 
 <h1>Apply for a surgery</h1>
 <h2>*Patient information:*</h2>
-<form class="f1" action="/action_page.php">
+     <a href="{{url_for('LogOut')}}"> <button class="b4"   type="button"  >Log Out   </button> </a>
+
+<form class="f1"  action="{{url_for('applyforsurgery')}}" method="POST">
 	<div class="A">
-   First name: <input  class="B" type="text" name="first" >
-  </div>
+   Name: <input  class="B" type="text" name="name" ><br>
+  
+  Patient ID: <input  class="C" type="number"  name="P_id" ><br>
 
-  <div class="C">
-  Last name: <input  class="D" type="text"  name="Last" >
 
-</div>
-<div class="E">
+Doctor ID: <input  class="D" type="number"  name="d_id" ><br>
 
- Entery date: <input  class="F" type="text"  name="Medical" >
-</div>
-<div class="G">
 
-  Medical state: <input  class="H" type="text"  name="Medical" >
-</div>
-<div class="I">
+ Age: <input  class="E" type="text"  name="age" ><br>
 
-  Patient ID: <input  class="J" type="password"  name="ID" >
-</div>
-<div class="K">
 
-  Medical History: <input  class="L" type="text"  name="medical History" >
-</div>
-<div class="M">
+  Gender: <input  class="F" type="text"  name="gender" ><br>
 
- Gender: <input  class="N" type="text"  name="gender" >
-</div>
+  Visit Date: <input  class="G" type="Date"  name="visit_date" ><br>
+  Surgery Date: <input  class="H" type="Date"  name="surgery_date" ><br>
 
-<div class="x">
 
- Operation Date: <input  class="y" type="date"  name="date" >
+ Surgery Time: <input  class="I" type="Time"  name="surgery_time" ><br>
+ OR Room: <input  class="L" type="number"  name="OR_Room" ><br>
+
+ Patient Scans : <input  class="K" type="text"  name="Scans" ><br>
+ Urgency: <input  class="J" type="text"  name="urgency" ><br>
+
 </div>
 
   <input class="Z" type="submit" value="Submit">

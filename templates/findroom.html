@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+  		 <title>search for a room </title>
+   		 <link rel="stylesheet" href="{{url_for('static' ,filename='css/patient_id.css')}}">
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+    <body>
+      <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+    	<h1> Search for room occuption </h1>
+	    <a href ="{{url_for('doctor')}}"><button class="E"  type="button"  >Back </button> </a>
+  
+      <form action="{{url_for('findrooms')}}" method="POST">
+        <div class="A">
+        Room ID: <input  class="B" type="ID" name="Room ID" >
+        </div>
+
+        <div class="A">
+            Department ID: <input  class="C" type="ID" name="Department ID" >
+            </div>
+
+             <input class="Z" type="submit" value="Submit">
+        
+        
+      </form>
+ 
+      
+  	</body>
+</html>

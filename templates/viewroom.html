@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+    <style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+        </style>
+  		 <title>search for a patient </title>
+      <link rel="stylesheet" href="{{url_for('static' ,filename='css/schadual.css')}}"> 
+
+       <link rel="stylesheet" href="{{url_for('static' ,filename='css/patient_id.css')}}"> 
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+    <body>
+      <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+    	<h1>View room</h1>
+
+    <table bgcolor="white">
+       <tr>
+          {% for r in data.header %}
+          <td>{{ r  }}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{ l }}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+
+  	</body>
+</html>

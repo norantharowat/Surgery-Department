@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+          table, th, td {
+          padding: 10px;
+          border: 1px solid black; 
+          border-collapse: collapse;
+          }
+        </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{url_for('static' ,filename='css/view.css')}}">
+  
+   <title>View</title>
+       
+   </head>
+
+   <body>
+      <h1>View all doctors</h1>
+
+     
+     <a href="{{url_for('viewsurgeons')}}"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+     <a href="{{url_for('addsurgeon')}}"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="{{url_for('deletedoctor')}}"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+     <a href="{{url_for('head')}}"> <button class="b4"   type="button"  >Home   </button> </a>
+     <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+
+
+
+   <table  bgcolor="white" >
+       <tr>
+          {% for r in data.header %}
+          <td>{{r}}</td>
+          {% endfor %}
+       </tr>
+       {% for r in data.rec %}
+       <tr>
+          {% for l in r%}
+            <td> {{l}}</td>
+          {% endfor %}
+       </tr>
+       {% endfor %}
+    </table>
+
+   </body>
+</html> 

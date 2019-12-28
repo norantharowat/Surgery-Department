@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+  		 <title>Delete a doctor from Database </title>
+   		  <link rel="stylesheet" href="{{url_for('static', filename='css/deletedoctor.css')}}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+    <body>
+
+    	<h1> Delete a doctor from Database</h1>
+
+
+     <a href="{{url_for('viewsurgeons')}}"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+     <a href="{{url_for('addsurgeon')}}"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="{{url_for('deletedoctor')}}"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+     <a href="{{url_for('head')}}"> <button class="b4"   type="button"  >Home   </button> </a>
+     <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+    
+      <form action="{{url_for('deletedoctor')}}" method="POST">
+        <div class="A">
+        Doctor ID: <input  class="B" type="ID" name="D_id" >
+        </div>
+	       <input class="Z" type="submit" value="Submit">
+        
+      </form>
+ 
+      
+  	</body>
+</html>

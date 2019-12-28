@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+	<title>Head of surgery department </title>
+</head>
+<body>
 
-	<head>
-  	
-    <title>Welcome</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit="no">
-    <link rel="stylesheet" type="text/css" href="/static/Test.css">
-	</head>
-    <body>
-    	<br><br>
+	<h1> Welcome doctor Ahmed </h1>
+	<p> Head of Surgery department</p>
+	<h3> Information:</h3>
+	<p></p>
 
-    	
-    	<h1> Welcom to the Surgery department</h1>
-    	
-	    <a href ="Sign-in.html"> <button  type="button"  >Sign in </button> </a>
-        
-        
-  	</body>
+     <a href="{{url_for('viewsurgeons')}}"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+     <a href="{{url_for('addsurgeon')}}"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="{{url_for('deletedoctor')}}"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+	 <a href="http://127.0.0.1:7000/statistic"><button class="b4"   type="button"  > Surgeries Statistics    </button></a>
+	 <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+	
+	
+ 
+</body>
 </html>

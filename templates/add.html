@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/add.css')}}">        
+<title>Add a new surgeon </title>
+        
+   </head>
+
+   <body>
+
+      <h1>Add new doctor</h1>
+
+     
+     <a href="{{url_for('viewsurgeons')}}"> <button class="b1"  type="button"  >View Surgeons  </button></a>
+     <a href="{{url_for('addsurgeon')}}"><button class="b2"  type="button"  >ADD Surgeon    </button></a>
+     <a href="{{url_for('deletedoctor')}}"> <button class="b3"   type="button"  >Delete Surgeon    </button> </a>
+     <a href="{{url_for('head')}}"> <button class="b4"   type="button"  >Home   </button> </a>
+     <a href="{{url_for('LogOut')}}"> <button class="b5"   type="button"  >Log Out   </button> </a>
+
+
+      
+
+      <form class="f1" action="{{url_for('addsurgeon')}}" method="POST">
+
+        
+  <div class="A">
+   
+   User name: <input  class="B" type="text" name="user_name" ><br>
+
+   Password: <input  class="C" type="text" name="pass_word" ><br>
+
+   Name: <input  class="D" type="text" name="name" ><br>
+  
+
+   ID: <input  class="E" type="number"  name="D_id" ><br>
+
+   Age: <input  class="F" type="number" name="age" ><br>
+  
+   Gender: <input  class="G" type="text" name="gender" ><br>
+  
+   Start Date: <input  class="H" type="Date" name="start_date" ><br>
+  
+   Degree: <input  class="I" type="text" name="degree" ><br>
+ 
+   Department: <input  class="J" type="text" name="department" ><br>
+  
+   Phone: <input  class="K" type="number" name="phone" ><br>
+ 
+   Mail: <input  class="L" type="text" name="mail" ><br>
+  </div>
+
+  <input class="Z" type="submit" value="Submit">
+</form> 
+
+
+   </body>
+</html> 
